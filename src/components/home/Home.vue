@@ -49,7 +49,9 @@ export default {
   },
   methods:{
     remove(foto){
-      alert(`Foto ${foto.titulo} removida!`);
+      if(confirm('Confirma operação?')){
+        alert(`Foto ${foto.titulo} removida!`);
+      }
     }
   },
   created(){
